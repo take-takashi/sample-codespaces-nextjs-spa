@@ -11,7 +11,9 @@
   ],
   "settings": {
     "editor.tabSize": 2, // インデントタブサイズは2とする
-    "editor.insertSpaces": true // インデントはスペースとする
+    "editor.insertSpaces": true, // インデントはスペースとする
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierにする
+    "editor.formatOnSave": true // 保存時にフォーマットする
   },
   "postCreateCommand": ""
 }
