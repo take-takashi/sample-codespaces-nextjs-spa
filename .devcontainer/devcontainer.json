@@ -3,10 +3,15 @@
   "name": "node18.9",
   "features": {},
   "extensions": [
-	"hediet.vscode-drawio",
-	"GrapeCity.gc-excelviewer",
-	"mechatroner.rainbow-csv"
-],
-  "settings": {},
+    "hediet.vscode-drawio",
+    "GrapeCity.gc-excelviewer",
+    "mechatroner.rainbow-csv",
+    "redhat.vscode-yaml",
+    "esbenp.prettier-vscode"
+  ],
+  "settings": {
+    "editor.tabSize": 2, // インデントタブサイズは2とする
+    "editor.insertSpaces": true // インデントはスペースとする
+  },
   "postCreateCommand": ""
 }
