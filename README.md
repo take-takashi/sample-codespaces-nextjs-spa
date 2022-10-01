@@ -11,6 +11,14 @@ mkdir frontend
 mkdir infra
 ```
 
+## .devcontainer.json
+
+- features で使えるリスト
+  https://github.com/microsoft/vscode-dev-containers/tree/main/script-library/docs
+
+- aws-cli でアカウントを使えるように Codespaces の Secrets にアクセスキーを登録する
+  https://github.com/microsoft/vscode-dev-containers/tree/main/script-library/docs
+
 ## frontend setup
 
 ```

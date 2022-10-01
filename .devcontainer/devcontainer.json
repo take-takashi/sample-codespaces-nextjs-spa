@@ -1,7 +1,9 @@
 {
   "image": "node:18.9",
   "name": "node18.9",
-  "features": {},
+  "features": {
+    "aws-cli": "latest"
+  },
   "extensions": [
     "hediet.vscode-drawio",
     "GrapeCity.gc-excelviewer",
