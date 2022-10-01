@@ -19,6 +19,11 @@ mkdir infra
 - aws-cli でアカウントを使えるように Codespaces の Secrets にアクセスキーを登録する
   https://github.com/microsoft/vscode-dev-containers/tree/main/script-library/docs
 
+  追加するキーは以下
+
+  - AWS_ACCESS_KEY_ID
+  - AWS_SECRET_ACCESS_KEY
+
 ## frontend setup
 
 ```
@@ -39,3 +44,20 @@ npm i -D prettier eslint-config-prettier
 cd infra/
 cdk init --language typescript
 ```
+
+### infra command
+
+```
+# 初回限定？
+cdk bootstrap
+
+# デプロイ
+cdk deploy
+
+# 削除
+cdk destroy
+```
+
+# TODO
+
+- .aws/config を作成してデフォルトリージョンを設定する
