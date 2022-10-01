@@ -19,3 +19,7 @@ npx create-next-app nextapp --ts --use-npm
 cd nextapp/
 npm i -D prettier eslint-config-prettier
 ```
+
+### 構築の参考
+
+- [【2022 年】Next.js + TypeScript + ESLint + Prettier の構成でサクッと環境構築する](https://zenn.dev/hungry_goat/articles/b7ea123eeaaa44)
