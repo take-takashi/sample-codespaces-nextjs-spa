@@ -18,5 +18,5 @@
       "source.fixAll.eslint": true // ファイル保存時、ESLint による自動フォーマット
     }
   },
-  "postCreateCommand": ""
+  "postCreateCommand": "bash ./.devcontainer/init.bash"
 }
