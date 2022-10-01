@@ -16,4 +16,6 @@ mkdir infra
 ```
 cd frontend/
 npx create-next-app nextapp --ts --use-npm
+cd nextapp/
+npm i -D prettier eslint-config-prettier
 ```
