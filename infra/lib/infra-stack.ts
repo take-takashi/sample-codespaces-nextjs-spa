@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib'
 import { Construct } from 'constructs'
-import * as cognito from 'aws-cdk-lib/aws-cognito'
+import { aws_cognito as cognito, aws_s3 as s3, RemovalPolicy } from 'aws-cdk-lib'
 
 export class InfraStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -8,6 +8,14 @@ export class InfraStack extends cdk.Stack {
 
     // The code that defines your stack goes here
 
+    // s3
+    const staticWebsiteBucket = new s3.Bucket(this, 'staticWebsiteBucket', {
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    })
+
+    // cognito user pool
     const userPool = new cognito.UserPool(this, 'MyUserPool', {
       userPoolName: 'sample-user-pool',
       selfSignUpEnabled: true,
@@ -38,5 +46,7 @@ export class InfraStack extends cdk.Stack {
       accountRecovery: cognito.AccountRecovery.EMAIL_ONLY,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     })
+
+    // end
   }
 }

@@ -5,12 +5,13 @@
     "aws-cli": "latest"
   },
   "extensions": [
-    "hediet.vscode-drawio",
-    "GrapeCity.gc-excelviewer",
-    "mechatroner.rainbow-csv",
-    "redhat.vscode-yaml",
-    "esbenp.prettier-vscode"
-  ],
+	"hediet.vscode-drawio",
+	"GrapeCity.gc-excelviewer",
+	"mechatroner.rainbow-csv",
+	"redhat.vscode-yaml",
+	"esbenp.prettier-vscode",
+	"donjayamanne.githistory"
+],
   "settings": {
     "editor.tabSize": 2, // インデントタブサイズは2とする
     "editor.insertSpaces": true, // インデントはスペースとする
