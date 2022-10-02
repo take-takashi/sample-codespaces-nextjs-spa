@@ -60,4 +60,4 @@ cdk destroy
 
 # TODO
 
-- .aws/config を作成してデフォルトリージョンを設定する
+- [済].aws/config を作成してデフォルトリージョンを設定する
